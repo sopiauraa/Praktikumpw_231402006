@@ -1,0 +1,197 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(43, 41, 41);
+}
+
+.main-container{
+    width: 1200px;
+    margin: auto;
+}
+@media (max-width: 1200px){
+    .main-container{
+        width: 90%;
+    }
+}
+/* title */
+.pre-title {
+    position: relative;
+    letter-spacing: 0.5rem;
+    width: fit-content;
+    padding-left: 40px;
+    color: grey;
+    margin-top: 20%;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+/* logo and navigation menu */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo  {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;   
+}
+
+.logo a {
+    color: rgb(43, 41, 41); 
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;  
+}
+
+.nav a{
+    color: rgb(43, 41, 41)  
+}
+
+.nav-menu div{
+     width: 25px;
+     height: 2px;
+     background-color: black;
+     margin: 7px;
+     transition: all .3s;
+     z-index: 99; /*agar selalu diatas*/
+}
+
+.nav-menu{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 30px;
+}
+
+/* Gaya untuk tombol mode */
+#mode {
+    background-color: #f3eded;
+    color: #3f3939;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+/* hero section */
+#hero   {
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    position: relative;
+    background-image: url('backgroud1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.hero-name{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-left {
+    position: relative;
+    padding-left: 40px;
+}
+
+/* about me main container */
+@media (max-width: 1200px){
+    #about {
+        width: 80%;
+    }
+}
+  
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* container about me */
+#about {
+    margin-left: 40px; 
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+.about-icon{
+    background: #ebe6e6;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 5rem 3rem;
+    border-radius: 5px;
+    border: 1px solid;
+
+}
+
+/* contact-footer */
+@media (max-width: 1200px){
+    .footer {
+        width: 100%;
+    }
+}
+
+#contact{
+    background-color: #d4cdcd; 
+    width: 100%;
+    position: relative;
+}
+.footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+  .kontak,  .sosial-media {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Gaya untuk judul kontak dan sosial media */
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Gaya untuk tautan Instagram */
+  .sosial-media a img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  
+

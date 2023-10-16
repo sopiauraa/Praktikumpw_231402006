@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="portostyle.css" id="stylesheet">
+
+    <style>
+        body.dark-mode {
+        background-color: #9eb3c1;
+        color: #758095;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">SopiAur</a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button id="mode-toggle">Mode</button>
+                </ul>
+            </nav>
+
+        </div>
+        <section id="hero">
+            <div class="hero-left">
+                <h1 class="hero-name"> HELLO! <br>
+                    <i>This is My Portofolio</i></h1>
+          </section>
+    </div>
+</header>
+
+<section id="about">
+     <!-- <div class="service-main-container"> -->
+        <h3 class="pre-title">About me</h3>
+        <div class="grid-2">
+            <div class="about">
+                <div class="about-icon">
+                    <img class="icon" src="profile.png" alt="">
+                    <h4>Person</h4>
+                    <p>I'm Sopi Aura Nisa. I'm 18 years old. I was a college student who really liked music,
+                         Traveling and things that smelled of sweet foods. I also like to read books especially about self 
+                         improvement because I can find it in my daily life.</p>
+                </div>
+
+                <div class="about-icon">
+                    <img class="icon" src="school.png" alt="">
+                    <h4>Education</h4>
+                    <p>I'm currenly studying S1 Information Technology at the University
+                        of North Sumatera. Before I studied at USU I had studied at Mas Darul Mursyid in North Tapanuli.
+                        I can be said to be proficient in using Microsoft Office and now I am learning to be able to program reliably.
+                    </p>
+                </div>
+            </div>
+        </div>
+     </div>
+</section>
+
+<h3 class="pre-title">Contact</h3>
+<section id="contact">
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="kontak">
+            <h3>Contact</h3>
+            <p>Email: sopiauranisa05@gmail.com</p>
+          </div>
+          <div class="sosial-media">
+            <h3>Social Media</h3>
+            <a href="https://instagram.com/sopiaur_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                @sopiaur_
+            </a>
+          </div>
+        </div>
+      </footer>
+</section>
+
+   <script>
+    // Mendapatkan tombol mode
+    const modeToggle = document.getElementById('mode-toggle');
+    
+    // Membuat variabel untuk menyimpan status mode
+    var darkModeEnabled = false;
+    
+    modeToggle.addEventListener('click', function () {
+
+      darkModeEnabled = !darkModeEnabled;
+
+      // Memperbarui tampilan berdasarkan status mode
+      if (darkModeEnabled) {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    });
+  </script>
+</body>
+</html>
